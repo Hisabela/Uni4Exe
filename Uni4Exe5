@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Uni4Exe5 {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        boolean resposta = teclado.nextBoolean();
+
+        if (resposta) {
+            System.out.println("SIM");
+        } else {
+            System.out.println("NÃO");
+        }
+        teclado.close();
+    }
+
+}
