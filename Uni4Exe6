@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Uni4Exe6 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite F,M ou I");
+String letra = teclado.nextLine();
+
+if(letra == "M"){
+System.out.println("Masculino");
+}else if (letra == "F"){
+System.out.println("Feminino");
+} else if (letra == "I"){
+System.out.println("Não informado");
+} else {
+    System.out.println("Entrada Incorreta");
+}
+
+teclado.close();
+
+}
+
+}
