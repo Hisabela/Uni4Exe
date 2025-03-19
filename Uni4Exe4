@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Uni4Exe4 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite um número: ");
+double num = teclado.nextDouble();
+
+if (num%1==0){
+System.out.println("Casas decimais não foram digitadas.");
+} else {
+    System.out.println("Casas decimais foram digitadas.");
+}
+teclado.close();
+}
+
+}
+
