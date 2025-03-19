@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Uni4Exe3 {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println(" Escreva um valor:");
+        int valor01 = teclado.nextInt();
+
+        System.out.println("Escreva outro valor:");
+        int valor02 = teclado.nextInt();
+
+        if (valor01 > valor02) {
+            System.out.println("O " + valor01 + " é maior que o " + valor02);
+        } else {
+            System.out.println("O " + valor02 + " é maior que o " + valor01);
+        }
+        teclado.close();
+
+    }
+
+}
