@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Uni4Exe1 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite as horas trabalhadas este mês: ");
+int horasMes = teclado.nextInt();
+
+System.out.println("Escreva o valor pago por hora: ");
+int valorHora = teclado.nextInt();
+
+int salarioTotal = horasMes*valorHora;
+int salarioExtra;
+
+if ( AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH salarioExtra (horasMes-160)*(valorHora/2)){
+} else {
+    salarioTotal = salarioTotal + salarioExtra;
+}
+System.out.println(salarioTotal);
+}
+
+}
