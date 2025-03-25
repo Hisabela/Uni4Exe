@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Uni4Exe18 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Dia do vencimento: ");
+int diaVen = teclado.nextInt();
+
+System.out.println("Dia do pagamento: ");
+int diaPag = teclado.nextInt();
+
+System.out.println("Valor prestação: ");
+int valorPrest = teclado.nextInt();
+
+
+
+}
+
+}
