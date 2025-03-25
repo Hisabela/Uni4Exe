@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Uni4Exe16 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite a idade homem mais velho: ");
+int HV = teclado.nextInt();
+
+System.out.println("Digite a idade homem mais novo: ");
+int HO = teclado.nextInt();
+
+System.out.println("Digite a idade da mulher mais velha:");
+int MV = teclado.nextInt();
+
+System.out.println("Digite a idade da mulher mais nova: ");
+int MN = teclado.nextInt();
+
+int soma = HV + MN;
+int produto = HO * MV;
+
+System.out.println("Soma: "+soma+" Produto: "+produto);
+
+teclado.close();
+
+}
+
+}
