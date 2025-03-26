@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Uni4Exe22 {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println(
+                " Escolha entre: \n 1  Ciência da Computação \n 2  Licenciatura da Computação \n 3  Sistemas de Informação");
+        int curso = teclado.nextInt();
+
+        switch (curso) {
+            case 1:
+                System.out.println("Bacharel em Ciência da Computação");
+                break;
+
+            case 2:
+                System.out.println("Licenciatura da Computação");
+                break;
+
+            case 3:
+                System.out.println("Sistemas de Informação");
+                break;
+
+        }
+        teclado.close();
+    }
+
+}
