@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class Uni4Exe025 {
+
+    public static void main(String[] args) {
+        
+ Scanner teclado = new Scanner (System.in);
+
+ System.out.println("Escreva um valor 1: ");
+ int valor1 = teclado.nextInt();
+
+ System.out.println("Escreva um valor 2: ");
+ int valor2 = teclado.nextInt();
+ 
+
+
+System.out.println(" Escolha uma opção: \n1 - Soma de dois números. \n 2 - Diferença entre dois números \n 3 - Produto entre dois números. \n 4 - Divisão entre dois números ");
+int opc = teclado.nextInt();
+
+switch (opc) {
+    case 1:
+         
+    int resultado1 = valor1 + valor2;
+
+
+    System.out.println(resultado1);
+        break;
+    case 2:
+    
+    int resultado2 = valor1 - valor2;
+
+    System.out.println(resultado2);
+
+       break;
+
+    case 3:
+
+int resultado3 = valor1*valor2;
+
+System.out.println(resultado3);
+
+       break;
+    case 4:
+
+    if(valor2!=0){
+       int resultado4 = valor1/valor2;
+       System.out.println(resultado4);
+    } else {
+System.out.println("inválido");
+       
+    }
+
+    break;
+
+    default: System.out.println("inválido");
+        break;
+}
+
+    }
+
+}
