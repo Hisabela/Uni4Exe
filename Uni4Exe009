@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Uni4Exe09 {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Escreva o primeiro valor: ");
+        int valor1 = teclado.nextInt();
+
+        System.out.println("Escreva o segundo valor: ");
+        int valor2 = teclado.nextInt();
+
+        if (valor1 % valor2 == 0) {
+            System.out.println("Os valores são múltiplos.");
+
+        } else {
+            System.out.println("Os valores não são múltiplos");
+        }
+
+        teclado.close();
+    }
+
+}
