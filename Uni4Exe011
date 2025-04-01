@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Uni4Exe11 {
+
+public static void main(String[] args) {
+    
+Scanner teclado = new Scanner(System.in);
+
+System.out.println("Digite a idade: ");
+int idade1 = teclado.nextInt();
+
+System.out.println("Digite a idade: ");
+int idade2 = teclado.nextInt();
+
+System.out.println("Digite a idade: ");
+int idade3 = teclado.nextInt();
+
+
+if (idade1==idade2 && idade1!=idade3){
+    System.out.println("GÊMEOS");
+} else if (idade2==idade3 && idade2!=idade1){
+System.out.println("GÊMEOS");
+} else if (idade1==idade3 && idade1!=idade2){
+    System.out.println("GÊMEOS");
+} else if (idade1!=idade2 ){
+    System.out.println("APENAS IRMÃOS");
+} else if (idade2!=idade3){
+System.out.println("APENAS IRMÃOS");
+} else if (idade1!=idade3){
+    System.out.println("APENAS IRMÃOS");
+} else {
+    System.out.println("TRIGÊMEOS");
+}
+
+
+teclado.close();
+
+}
+
+}
