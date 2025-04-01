@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Uni4Exe017 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Renda anual: ");
+        double rendaAnual = teclado.nextDouble();
+
+        System.out.print("Quantidade de dependentes: ");
+        int dependentes = teclado.nextInt();
+
+        double desconto = 0.02 * dependentes * rendaAnual; 
+        double rendaLiquida = rendaAnual - desconto;
+
+        double porcentagemImposto = 0;
+        double imposto = 0;
+
+        if (rendaLiquida <= 2000) {
+            porcentagemImposto = 0; 
+            imposto = 0;
+        } else if (rendaLiquida <= 5000) {
+            porcentagemImposto = 0.05; 
+            imposto = rendaLiquida * porcentagemImposto;
+        } else if (rendaLiquida <= 10000) {
+            porcentagemImposto = 0.10; 
+            imposto = rendaLiquida * porcentagemImposto;
+        } else {
+            porcentagemImposto = 0.15; 
+            imposto = rendaLiquida * porcentagemImposto;
+        }
+
+        System.out.printf("O imposto é de %.0f%%: R$ %.2f%n", porcentagemImposto * 100, imposto);
+
+        teclado.close();
+    }
+}
