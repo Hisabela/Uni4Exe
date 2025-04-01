@@ -1,33 +1,72 @@
 import java.util.Scanner;
-public class Uni4Exe24 {
+public class Uni4Exe024 {
 
-public static void main(String[] args) {
-    
+    public static void main(String[] args) {
+        
 Scanner teclado = new Scanner(System.in);
 
+System.out.println("Escreva o valor 1: ");
+ int valor1 = teclado.nextInt();
 
-System.out.println("Valor1: ");
-int valor1 = teclado.nextInt();
+ System.out.println("Escreva o valor 1: ");
+ int valor2 = teclado.nextInt();
 
-System.out.println("Valor2: ");
-int valor2 = teclado.nextInt();
+ System.out.println("Escreva o valor 1: ");
+ int valor3 = teclado.nextInt();
 
-System.out.println("Valor3: ");
-int valor3 = teclado.nextInt();
+ System.out.println("Escolha uma opção 1, 2 ou 3 ");
+ int opc = teclado.nextInt();
 
-System.out.println("Escolha um número de 1 a 3: ");
-int opc = teclado.nextInt();
-
-switch (opc) {
+ switch (opc) {
     case 1:
-        if (valor1<valor2){
-            System.out.println(valor1);
-        }
-        break;
+    if (valor1 <= valor2 && valor2 <= valor3) {
+        System.out.println(valor1 + " " + valor2 + " " + valor3);
+    } else if (valor1 <= valor3 && valor3 <= valor2) {
+        System.out.println(valor1 + " " + valor3 + " " + valor2);
+    } else if (valor2 <= valor1 && valor1 <= valor3) {
+        System.out.println(valor2 + " " + valor1 + " " + valor3);
+    } else if (valor2 <= valor3 && valor3 <= valor1) {
+        System.out.println(valor2 + " " + valor3 + " " + valor1);
+    } else if (valor3 <= valor1 && valor1 <= valor2) {
+        System.out.println(valor3 + " " + valor1 + " " + valor2);
+    } else {
+        System.out.println(valor3 + " " + valor2 + " " + valor1);
+    }
+    break;
     case 2:
+    if (valor1 >= valor2 && valor2 >= valor3) {
+        System.out.println(valor1 + " " + valor2 + " " + valor3);
+    } else if (valor1 >= valor3 && valor3 >= valor2) {
+        System.out.println(valor1 + " " + valor3 + " " + valor2);
+    } else if (valor2 >= valor1 && valor1 >= valor3) {
+        System.out.println(valor2 + " " + valor1 + " " + valor3);
+    } else if (valor2 >= valor3 && valor3 >= valor1) {
+        System.out.println(valor2 + " " + valor3 + " " + valor1);
+    } else if (valor3 >= valor1 && valor1 >= valor2) {
+        System.out.println(valor3 + " " + valor1 + " " + valor2);
+    } else {
+        System.out.println(valor3 + " " + valor2 + " " + valor1);
+    }
+    break;
+
+    case 3:
+    if ((valor1 >= valor2 && valor1 >= valor3)) {
+        System.out.println(valor2 + " " + valor1 + " " + valor3);
+    } else if ((valor2 >= valor1 && valor2 >= valor3)) {
+        System.out.println(valor1 + " " + valor2 + " " + valor3);
+    } else {
+        System.out.println(valor1 + " " + valor3 + " " + valor2);
+    }
+    break;
+   
+    default:
+    System.out.println("Opção inválida!");
+
+ }
+
+teclado.close();
+    }
+
 
 }
 
-}
-
-}
