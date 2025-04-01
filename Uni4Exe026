@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Uni4Exe026 {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("\nse opção = 'T': calcular a área de um triângulo de base ser altura h\r\n" + //
+                "\nse opção = 'Q': calcular a área de um quadrado de lado l\r\n" + //
+                "\nse opção = 'R': calcular a área de um retângulo de base ser altura h\r\n" + //
+                "\nse opção = 'C': calcular a área de um círculo de raio r  ");
+                char opc = teclado.next().toUpperCase().charAt(0);
+
+        switch (opc) {
+
+            case 'T':
+
+                System.out.println("Base: ");
+                int base = teclado.nextInt();
+
+                System.out.println("Altura: ");
+                int altura = teclado.nextInt();
+
+                System.out.println("Área do triângulo = " + (base * (altura / 2)));
+
+                break;
+
+            case 'Q':
+
+                System.out.println("Lado: ");
+                int lado = teclado.nextInt();
+
+                System.out.println("Área quadrado = " + (lado ^ lado));
+
+                break;
+
+            case 'R':
+
+                System.out.println("Base: ");
+                int baseR = teclado.nextInt();
+
+                System.out.println("Altura: ");
+                int alturaR = teclado.nextInt();
+
+                System.out.println("Área do retângulo = " + (baseR * alturaR));
+
+                break;
+
+            case 'C':
+
+                System.out.println("Raio: ");
+                int raio = teclado.nextInt();
+
+                System.out.println("Área do círculo = " + (Math.PI * (Math.pow(raio, 2))));
+                break;
+
+            default:
+
+                System.out.println("Opção inválida");
+        }
+
+    }
+
+}
